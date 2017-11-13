@@ -2,7 +2,12 @@
 
 $(document).on("pagecreate","#pageone",function(){
     
-    var responses = [
+    
+    
+  	                     
+});
+
+var responses = [
         "Yes",
         "No",
         "Maybe",
@@ -15,11 +20,6 @@ $(document).on("pagecreate","#pageone",function(){
         "Elton John",
         "If you say so",
     ]
-    
-  	                     
-});
-
-
 
 $('#taptext').on("tap",function(){
     submitText();
