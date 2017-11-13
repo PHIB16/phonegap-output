@@ -10,7 +10,7 @@ $(document).on("pagecreate","#pageone",function(){
 }); 
     
   	                     
-
+});
 
 var responses = [
         "Yes",
