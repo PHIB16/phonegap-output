@@ -22,7 +22,8 @@ var responses = [
     ]
 
 $('#taptext').on("tap",function(){
-    submitText();
+   // submitText();
+      $("#responseText").text( randomAnswer());
 }); 
 
 
@@ -78,6 +79,6 @@ function vibrate(){
     }
 
 function submitText() {
-	var text = $('#textinput').val();
+	//var text = $('#textinput').val();
     $("#responseText").text( randomAnswer());
 }
