@@ -2,12 +2,14 @@
 
 $(document).on("pagecreate","#pageone",function(){
     
-    var onShake = submitText();
+    
     $('#taptext').on("tap",function(){
-   // submitText();
+        
+      // submitText();
       $("#responseText").text( randomAnswer());
         beepOrVibrate();
-}); 
+    });
+    var onShake = submitText();
     
   	                     
 });
