@@ -57,7 +57,7 @@ function random() {
 
 
 function randomAnswer(){
-    var result = responses[random()]  +  responses[random() + 1];
+    var result = responses[random()];
 	return result;
 }
 
