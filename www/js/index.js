@@ -62,18 +62,11 @@ function randomAnswer(){
 
 function beep(){
     
-    var rand = random();
-        
-    	$(this).text(rand);
-        
-        if(rand){
+   
             navigator.notification.beep(1);
            
-           }
-        else {
-            navigator.notification.beep(2);
-            
-        }
+     
+        
 }
 
 
