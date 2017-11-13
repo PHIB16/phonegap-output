@@ -9,7 +9,7 @@ $(document).on("pagecreate","#pageone",function(){
       $("#responseText").text( randomAnswer());
         beepOrVibrate();
     });
-   // var onShake = submitText();
+    var onShake = submitText();
     
   	                     
 });
