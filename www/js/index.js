@@ -9,14 +9,10 @@ $(document).on("pagecreate","#pageone",function(){
       $("#responseText").text( randomAnswer());
         beepOrVibrate();
     });
+    
     var onShake = submitText();
+     shake.startWatch(onShake, 40);
     
-    
-    function submitText() {
-	//var text = $('#textinput').val();
-    $("#responseText").text( randomAnswer());
-    beepOrVibrate();
-}
   	   
     
 });
@@ -89,3 +85,8 @@ function vibrate(){
         
     }
 
+function submitText() {
+	//var text = $('#textinput').val();
+    $("#responseText").text( randomAnswer());
+    beepOrVibrate();
+}
