@@ -5,6 +5,7 @@ $(document).on("pagecreate","#pageone",function(){
     $('#taptext').on("tap",function(){
    // submitText();
       $("#responseText").text( randomAnswer());
+        beepOrVibrate();
 }); 
     
   	                     
@@ -48,7 +49,7 @@ function beepOrVibrate(){
 
 function random() {
     
-    var num = Math.round(Math.random() * 5);
+    var num = Math.round(Math.random() * 10);
     
     return num;
     
@@ -57,7 +58,7 @@ function random() {
 
 
 function randomAnswer(){
-    var result = responses[random()]  +  responses[random() + 1];
+    var result = responses[random()];
 	return result;
 }
 
