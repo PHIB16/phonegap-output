@@ -49,7 +49,7 @@ function beepOrVibrate(){
 function random() {
     
     var num = Math.round(Math.random() * 5);
-    alert(num);
+    
     return num;
     
     
