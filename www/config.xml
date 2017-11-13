@@ -6,7 +6,7 @@
         id        = "mob.app.dev.output"
         version   = "1.0.1">
 
-    <name>Application Input Test</name>
+    <name>Application Output Test</name>
 
     <description>
         
