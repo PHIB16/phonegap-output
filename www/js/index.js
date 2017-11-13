@@ -2,21 +2,18 @@
 
 $(document).on("pagecreate","#pageone",function(){
   
-  	$('#tapholdtext').on("taphold",function(){
-    	$(this).hide();
- 	});                       
+  	                     
 
-	$('#taptext').on("tap",function(){
-    	$(this).css('color', 'red');
+	$('#taptext').on("tap",random(){
+    	
  	}); 
 
-	$('#swipetext').on("swipeleft",function(){
-    	$(this).css('color', 'green');
-  	});  
-    
-   $('#swipetext').on("swiperight",function(){
-    	$(this).css('color', 'blue');
-  	});  
+	 
 
 
 });
+
+function random() {
+    
+    return !Math.round(Math.random());
+}
