@@ -5,7 +5,7 @@ $(document).on("pagecreate","#pageone",function(){
   	                     
 
 	$('#taptext').on("tap",random(){
-    	
+    	alert(random());
  	}); 
 
 	 
@@ -16,4 +16,6 @@ $(document).on("pagecreate","#pageone",function(){
 function random() {
     
     return !Math.round(Math.random());
+    
+    
 }
