@@ -3,7 +3,8 @@
 $(document).on("pagecreate","#pageone",function(){
     
     $('#taptext').on("tap",function(){
-        submitText();
+        $("#responseText").text( randomAnswer());
+        beepOrVibrate();
       
     
   	                     
