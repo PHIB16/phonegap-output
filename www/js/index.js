@@ -5,13 +5,16 @@ $(document).on("pagecreate","#pageone",function(){
   	                     
 
 	$('#taptext').on("tap",function(){
-    	$(this).text(random);
         
-        if(random == true){
+        var rand = random();
+        
+    	$(this).text(rand);
+        
+        if(rand){
             navigator.notification.beep(1);
            
            }
-        else if(random == false){
+        else {
             navigator.notification.beep(2);
             
         }
