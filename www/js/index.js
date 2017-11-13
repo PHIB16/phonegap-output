@@ -9,9 +9,16 @@ $(document).on("pagecreate","#pageone",function(){
       $("#responseText").text( randomAnswer());
         beepOrVibrate();
     });
-     onShake = submitText();
+    var onShake = submitText();
     
-  	                     
+    
+    function submitText() {
+	//var text = $('#textinput').val();
+    $("#responseText").text( randomAnswer());
+    beepOrVibrate();
+}
+  	   
+    
 });
 
 var responses = [
@@ -82,8 +89,3 @@ function vibrate(){
         
     }
 
-function submitText() {
-	//var text = $('#textinput').val();
-    $("#responseText").text( randomAnswer());
-    beepOrVibrate();
-}
