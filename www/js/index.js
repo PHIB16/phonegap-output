@@ -3,9 +3,9 @@
 $(document).on("pagecreate","#pageone",function(){
     
     $('#taptext').on("tap",function(){
-        $("#responseText").text( randomAnswer());
-        beepOrVibrate();
-      
+   // submitText();
+      $("#responseText").text( randomAnswer());
+}); 
     
   	                     
 });
@@ -57,7 +57,7 @@ function random() {
 
 
 function randomAnswer(){
-    var result = responses[random()];
+    var result = responses[random()]  +  responses[random() + 1];
 	return result;
 }
 
@@ -81,5 +81,4 @@ function vibrate(){
 function submitText() {
 	//var text = $('#textinput').val();
     $("#responseText").text( randomAnswer());
-    beepOrVibrate();
 }
