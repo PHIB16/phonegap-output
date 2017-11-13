@@ -4,8 +4,8 @@ $(document).on("pagecreate","#pageone",function(){
   
   	                     
 
-	$('#taptext').on("tap",random(){
-    	alert(random());
+	$('#taptext').on("tap",function(){
+    	$(this).(random);
  	}); 
 
 	 
