@@ -2,6 +2,7 @@
 
 $(document).on("pagecreate","#pageone",function(){
     
+    var onShake = submitText();
     $('#taptext').on("tap",function(){
    // submitText();
       $("#responseText").text( randomAnswer());
@@ -9,7 +10,7 @@ $(document).on("pagecreate","#pageone",function(){
 }); 
     
   	                     
-});
+
 
 var responses = [
         "Yes",
@@ -82,4 +83,5 @@ function vibrate(){
 function submitText() {
 	//var text = $('#textinput').val();
     $("#responseText").text( randomAnswer());
+    beepOrVibrate();
 }
