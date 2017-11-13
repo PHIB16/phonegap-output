@@ -2,7 +2,10 @@
 
 $(document).on("pagecreate","#pageone",function(){
     
-    
+    $('#taptext').on("tap",function(){
+   // submitText();
+      $("#responseText").text( randomAnswer());
+}); 
     
   	                     
 });
@@ -21,10 +24,7 @@ var responses = [
         "If you say so",
     ]
 
-$('#taptext').on("tap",function(){
-   // submitText();
-      $("#responseText").text( randomAnswer());
-}); 
+
 
 
 
